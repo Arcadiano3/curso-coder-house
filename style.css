@@ -1,0 +1,168 @@
+/* Reset de CSS */
+* {
+    margin: 0;
+    /* Margen */
+    padding: 0;
+    /* Relleno */
+    box-sizing: border-box;
+}
+
+/* Selector + propiedad + valor
+
+selector {
+propiedad: valor
+}
+
+ */
+
+p {
+    /* color:blue; */
+    /* nombre de color, hexadecimal, rgb y rgba */
+    /* color:#b2d6f9 */
+    /* color:rgb(0, 0, 255); */
+    /* color:rgba(0, 0, 255, 0.5); */
+    font-size: 30px;
+    /* Uniades de medida | px em rem % */
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* body{
+    background-color: green;
+} */
+
+div {
+    color: green;
+}
+
+/* Especificidad */
+
+div span {
+    color: green;
+}
+
+span {
+    color: blue;
+}
+
+.titles {
+    text-decoration: underline;
+    /* Agrega Subrayado */
+}
+
+#testimonios {
+    text-align: center;
+    /* Alinea el texto al centro */
+    text-decoration: underline;
+}
+
+.titulo-servicios {
+    color: blue;
+    text-transform: uppercase;
+    /* uppercase los pone en mayúsculas | capitalize pone todas las primeras letras en mayúsculas | lowercase pone todo en minúscula */
+    font-size: 24px;
+    /* Absoluta */
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.parrafo-servicios {
+    color: gray;
+    font-style: italic;
+    font-size: 1.5em;
+    /* Relativa | al tamaño de fuente de elemento padre | rem es relativo al tamaño de la fuente del elemento raíz (todo el html)*/
+    font-weight: bold;
+    /* Negrita */
+}
+
+
+.caja {
+    width: 50%;
+    height: 50vh;
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin: 10px;
+    flex-grow: 1;
+    /* Flex grow nos permite cambiar el ancho de las cajas de manera flexible */
+}
+
+.contenedor {
+    display: flex;
+    /* Activa flexbox */
+    justify-content: space-between;
+    /* Alinear Horizontal */
+    align-items: center;
+    /* Alinear Vertical */
+    padding: 10px;
+    flex-direction: column;
+}
+
+
+
+/* Flexbox.html */
+
+.navbar {
+    background-color: lightblue;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    border: 2px solid black;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main-content {
+    width: 75%;
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+
+
+/* Bootstrap */
+
+@media (max-width: 576px) {
+
+    .custom-style {
+        background-color: red;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .custom-style {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 769px){
+    .custom-style{
+        background-color: green;
+    }
+}

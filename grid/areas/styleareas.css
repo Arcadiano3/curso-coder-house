@@ -1,0 +1,10 @@
+/* Reset de CSS */
+* {
+    margin: 0; /* Margen */
+    padding: 0; /* Relleno */
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+}

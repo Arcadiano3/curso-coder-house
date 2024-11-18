@@ -1,0 +1,13 @@
+.grid-container {
+    display: grid; /* Habilitar Grid */
+    grid-template-columns: repeat(4, 1fr); /* Definir columnas | unidad de medida fraccion |  */
+    gap: 5px;
+    grid-template-rows: 100px 200px; /* Definir las filas */
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
